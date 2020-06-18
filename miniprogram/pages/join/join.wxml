@@ -1,0 +1,24 @@
+<view class=''>
+<form class="ffrom" bindsubmit='onSubmitEvent'>
+ 
+  
+  <view class='container'>
+    
+   <view>姓名:
+   <textarea name="name" class="name" placeholder="请输入书名"></textarea>
+   </view>
+    <view>班级:
+   <textarea name="class1" class="class" placeholder="请输入班级"></textarea>
+   </view>
+   <view>学号:
+   <textarea name="number" class="number" placeholder="请输入学号"></textarea>
+   </view>
+   <button type="primary" class="submit-btn" formType="submit">我要参加</button>
+    
+    </view>
+    
+
+  
+  
+</form>
+</view>

@@ -1,0 +1,16 @@
+<!--pages/book/index.wxml
+<text>{{book.ISBN_bname}}</text>
+<view>{{book.ISBN_editor}}</view>
+<view>{{book.ISBN_image_S}}</view>
+<view>{{book.ISBN_introduce}}</view>
+<view>{{book.ISBN_publisher}}</view>-->
+
+<view class="container" >
+
+ <image class='img' src='{{book.ISBN_image_S}}'></image>
+<text class="w1">{{book.ISBN_bname}}</text>
+<text class="w2">{{book.ISBN_editor}}</text>
+<text class="w3">{{book.ISBN_introduce}}</text>
+<text class="w3">{{book.ISBN_publisher}}</text>
+
+</view>

@@ -1,0 +1,108 @@
+.sxbc-group{
+  width: 100%;
+  margin-bottom: 30rpx;
+  background: #fff;
+  padding: 40rpx 20px;
+  box-sizing: border-box;
+}
+
+.sxbc-group .user-group{
+  display: flex;
+}
+
+.user-group .avater{
+  width: 74rpx;
+  height: 74rpx;
+  border-radius: 50%;
+}
+
+
+.user-group .right-info{
+  flex: 1;
+  margin-left: 20rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.right-info .username{
+  font-size: 28rpx;
+  color: #323232;
+}
+
+.user-group .type{
+
+  margin-top: 40rpx;
+  font-size: 24rpx;
+  color: rgb(116,194,223);
+  border: 1rpx solid #E6E6EA;
+   border-radius: 5px;
+}
+
+.right-info .detail-info{
+  font-size: 24rpx;
+  color: #656565;
+  display: flex;
+}
+
+.detail-info .time{
+  margin-right: 20rpx;
+}
+
+.sxbc-content-group{
+  padding-top: 30rpx;
+}
+
+.sxbc-content-group .content{
+  font-size: 32rpx;
+}
+
+.content .contentbookName{
+  font-size: 32rpx;
+}
+
+.content .content2{
+  margin-top: 7rpx;
+  font-size: 28rpx;
+  color: #656565;
+}
+
+.sxbc-content-group .image-list-group{
+  padding-top: 20rpx;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.image-list-group image{
+  margin-bottom: 5rpx;
+}
+
+
+
+.sxbc-handle{
+  display: flex;
+  padding-top: 30rpx;
+  font-size: 28rpx;
+}
+
+
+.sxbc-handle image{
+  width: 40rpx;
+  height: 40rpx;
+  margin-right: 20rpx;
+}
+
+.sxbc-handle view{
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sxbc-handle navigator{
+  flex: 1;
+}
+.sxbc-handle .praise-group{
+  flex: 1;
+}

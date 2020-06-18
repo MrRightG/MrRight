@@ -1,0 +1,52 @@
+
+<view class=''>
+
+  <swiper class='activity-swiper' indicator-dots='{{true}}'
+  previous-margin="50rpx" next-margin="50rpx" current='{{currentIndex}}'>
+  
+  <swiper-item class='activity' wx:for="{{activity}}" wx:for-index="index" wx:for-item="sxbc">
+  <view class='container activity-card'  >
+    <image  class='activity-image' src='{{sxbc.images}}'></image>
+    <!--<text>{{item.id}}</text>-->
+    <scroll-view scroll-y style="height: 400rpx;">
+    <text class="name">活动:   {{sxbc.activName}}</text>
+    <text class="time">时间:   {{sxbc.datesb}} -- {{sxbc.datesf}}</text>
+    <text class="js">简介： {{sxbc.activContent}}</text>
+     </scroll-view>
+     
+    <view style='display:inline;color:green;' bindtap="onSubmitEvent" hover-class='nav-hover' id="{{index}}" class='nav-default' wx:for-index="index"  wx:for-item="sxbc" >
+    <block  wx:if="{{attend}}">
+   参加</block>
+    <block wx:else  >参加</block>
+      
+    </view>
+    
+    <scroll-view scroll-y style="height: 300rpx;">
+    <text>参加人员:</text>
+    <view >
+    <text class="people">{{sxbc.acTuser}}</text>
+    
+    </view>
+    </scroll-view>
+    <text  catchtap='f0' wx:if='{{index < (activity.length - 1)}}' class="return-button">返回最新</text>
+    </view>
+   </swiper-item>
+
+
+   <view  class=''>
+   <swiper-item class='activity-card1' >
+  
+    <navigator bindtap="f2" style='display:inline;color:green;'  open - type="switchTab" hover - class='nav-hover' class= 'nav-default1' > 发布新活动</navigator >
+    <view>
+    </view>
+  
+   </swiper-item>
+   </view>
+   
+  </swiper>
+
+
+
+
+</view>
+

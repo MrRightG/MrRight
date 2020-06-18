@@ -1,0 +1,35 @@
+ .borrow_record{
+  display:flex;
+  flex-direction:row ;
+ height: 50rpx;
+ }
+
+ .lend_on{
+ width: 50%;
+  text-align:center;
+  background-color: #fff;
+  border: 1rpx solid rgba(0, 0, 0, 0.575);
+ }
+
+ .lend_in{
+
+  width: 50%;
+  text-align:center;
+  background-color: #fff;
+  border: 1rpx solid rgba(0, 0, 0, 0.575);
+ }
+
+ .cookies{
+   background-color: #fff;
+   margin-top: 15rpx;
+
+ }
+
+ .book_name{
+   margin-top: 7rpx;
+   margin-bottom: 4rpx;
+ }
+ .borrow_time{
+     margin-top: 4rpx;
+   margin-bottom: 7rpx;
+ }

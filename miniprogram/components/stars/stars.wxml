@@ -1,0 +1,13 @@
+<!--component/stars.wxml-->
+<text>component/stars.wxml</text>
+<view class='rate-group'>
+
+<image src='../../images/rate_light.png' wx:for="{{lights}}" wx:key="{{index}}"></image>
+
+<image src='../../images/rate_half.png' wx:for="{{halfs}}" wx:key="{{index}}"></image>
+
+<image src='../../images/rate_gray.png' wx:for="{{grays}}" wx:key="{{index}}"></image>
+
+<view>{{rateText}}</view>
+
+</view>

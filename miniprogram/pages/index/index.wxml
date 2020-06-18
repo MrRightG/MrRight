@@ -1,0 +1,81 @@
+<wxs src="../../utils/util.wxs" module="util" />
+
+<!--<view>
+     <view>
+        <view class="weui-search-bar">
+            <view class="weui-search-bar__form">
+            !-- 搜索框 --
+                <view class="weui-search-bar__box">
+                    <icon class="weui-icon-search_in-box" type="search" size="14"></icon>
+                    <input type="text" class="weui-search-bar__input" placeholder="请输入搜索内容" bindinput="oninputEvent"></input>
+                </view>
+            </view>
+           
+            !--搜索按钮,调用搜索查询方法 
+            <view class="weui-search-bar__cancel-btn" >搜索</view>--
+        </view>
+    </view>
+</view>-->
+
+
+
+
+<view class="container">
+
+<!--<sxbc wx:for="{{fbSxbc}}" wx:for-item="sxbc" sxbc="{{sxbc}}" detailurl="../xq/xq?index={{index}}" bindonPraise="onPraiseTap"></sxbc>-->
+
+ <view class="sxbc-group" wx:for="{{fbSxbc}}" wx:for-item="sxbc" wx:for-index="windex">
+    <view class="user-group">
+      <image class="avater" src="{{sxbc.author.avatarUrl}}"></image>
+        <view class="right-info">
+          <view class="username">{{sxbc.author.nickName}}</view>
+            <view class="detail-info">
+              <view class="time">{{util.timeFormat(sxbc.create_time)}}</view>
+            </view>
+        </view>
+
+        <!--<image data-sxbc="{{windex}}" bindtap="selectFn" src="{{collectStatus==false?'cloud://sxbc.7378-sxbc-1300946422/collect-click.PNG':'cloud://sxbc.7378-sxbc-1300946422/collect.PNG'}}"></image>-->
+        </view>
+<view class="sxbc-content-group">
+  <view class="contentbookName">
+    <navigator url="../../pages/xq/xq?index={{windex}}">
+      {{sxbc.contentbookName}}
+    </navigator>
+    <view class="content">
+    <navigator url="../../pages/xq/xq?index={{windex}}">
+      {{sxbc.content}}
+    </navigator>
+    </view>
+  </view>
+  <block wx:if="{{sxbc.image.length > 0}}"></block>
+     <!-- 一张图片-->
+    <view wx:if="{{sxbc.images.length ===1}}" class="image-list-group"></view>
+  </view>
+    <!-- 两-四 张图片-->
+    <view wx:if="{{sxbc.images.length ===2 || sxbc.images.length === 4}}" class="image-list-group">
+    <image wx:for="{{sxbc.images}}" wx:for-item="image" src="{{image}}" mode="aspectFill" style="width:{{twoImageSize}}px;height:{{twoImageSize}}px"/>
+    </view>
+    <!-- 三-九 张图片-->
+    <view wx:else class="image-list-group">
+    <image wx:for="{{sxbc.images}}" wx:for-item="image" src="{{image}}" mode="aspectFill" style="width:{{threeImageSize}}px;height:{{threeImageSize}}px"/>
+    </view>
+<view class="sxbc-handle">
+  <view class="comment-group">
+  <navigator url="../../pages/xq/xq?index={{windex}}">
+    <image src="cloud://sxbc.7378-sxbc-1300946422/comment.png"/></navigator>
+  <navigator url="../../pages/xq/xq?index={{windex}}"> 评论</navigator>
+  </view>
+  <view class="praise-group" bindtap="onPraiseTap" data-sxbc="{{windex}}">
+   <image wx:if="{{sxbc.isPraised}}" src="cloud://sxbc.7378-sxbc-1300946422/praise_active.png"/>
+    <image wx:else src="cloud://sxbc.7378-sxbc-1300946422/praise.png"/>
+    <block wx:if="{{sxbc.praises && sxbc.praises.length > 0}}">
+    {{sxbc.praises.length}}</block>
+    <block wx:else>赞</block>
+    </view>
+    </view>
+  </view>
+  <loadingmore hasmore="{{hasmore}}"></loadingmore>
+</view>
+<view class="write-sxbc-btn" bind:tap="onWriteSxbcTap">
+<view>+</view>
+</view>

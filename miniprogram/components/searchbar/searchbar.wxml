@@ -1,0 +1,17 @@
+<view class='searchbar'>
+
+<!--跳转到搜索页面-->
+
+<navigator wx:if="{{isNavigator}}" class="search-navigator"
+
+url="/pages/search/search" ></navigator>
+
+<!--真正的搜索栏-->
+
+<view wx:else class="search-input-group">
+
+<input class="search-input" placeholder="搜索"></input>
+
+</view>
+
+</view>

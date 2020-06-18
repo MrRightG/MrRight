@@ -1,0 +1,26 @@
+/* pages/book/index.wxss */
+
+.container{
+  background: #fff;
+  height: 100%;
+}
+.img{
+  
+width: 300rpx;
+height: 380rpx;
+justify-content: center;
+
+}
+.w1{
+  font-size: 35rpx; 
+  margin-top: 20rpx;
+ margin-bottom: 10rpx
+}
+.w2{
+  font-size: 25rpx; 
+ margin-bottom: 10rpx
+}
+.w3{
+  width: 80%;
+ margin-bottom: 40rpx
+}

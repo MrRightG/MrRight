@@ -1,0 +1,16 @@
+<view class="borrow_record">
+<view class="lend_on" bindtap="lend_on">借出</view>
+<view class="lend_in" bindtap="lend_in">借入</view>
+</view>
+
+
+
+
+<view wx:for="{{borrow_record}}" wx:for-item="Sxbc" id="{{index}}" class="cookies" bindtap="confirm_return">
+<view class="book_name">书名:{{Sxbc.ISBN_bname}}</view>
+<view class="book_name">对方姓名:{{Sxbc.user_name}}</view>
+<view>借书时间:{{Sxbc.borrow_time}}</view>
+<view class="borrow_time">还书时间:{{Sxbc.return_time}}</view>
+</view>
+
+

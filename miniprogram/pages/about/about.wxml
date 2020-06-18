@@ -1,0 +1,43 @@
+<!--about/about.wxml-->
+<!-- 轮播图组件-->
+<swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+    <block wx:for="{{imgUrls}}" wx:key="unique2">
+      <swiper-item>
+        <image src="{{item}}" />
+      </swiper-item>
+    </block>
+</swiper>
+<!-- 搜索栏-->
+
+ <!--<view class="search-group">
+    <icon type="search"
+    class="search-icon" size="40rpx" 
+    color="#ccc"></icon>
+    <input class="search-input"
+    placeholder='请输入关键字'
+    placeholder-class='placeholder-input'></input>
+    <icon type="clear"
+    class="clear-icon" size="20px"
+    bind:tap="onClearEvent"></icon>
+  </view>-->
+  
+   <view  bind:tap="newactTap" open-type="switchTab" hover-class='nav-hover' class='nav-default'>热门书籍</view>
+  <view class='container'>
+  
+  
+
+<!-- 电影模块 -->
+  <view class='module-group'>
+    <view class='item-group' wx:for="{{book}}" wx:for-index="index" wx:for-item="sxbc" >
+    <navigator url="../book/book?isbn={{book[index].ISBN_ISBN}}">
+      <image class='img' src='{{sxbc.ISBN_image_S}}' ></image>
+    <view class='item-title'>{{sxbc.ISBN_bname}}</view>
+    </navigator>
+    </view>
+  </view>
+   </view>
+    
+
+
+
+  

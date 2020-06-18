@@ -1,0 +1,16 @@
+.Acollect{
+  background-color: #fff;
+    display: flex; 
+  align-items: center;
+  margin-top: 15rpx;
+}
+
+.ISBN_image_S{
+  width: 150rpx;
+  height: 200rpx;
+}
+
+.ISBN_bname{
+ margin-left: 80rpx;
+  height: 100%;
+}

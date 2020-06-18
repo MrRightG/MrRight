@@ -1,0 +1,74 @@
+{
+  "pages": [
+    "pages/about/about",
+    "pages/index/index",
+    "pages/my/my",
+    "pages/newactivity/newactivity",
+    "pages/xq/xq",
+    "pages/login/login",
+    "pages/fb1/fb1",
+    "pages/collect/collect",
+    "pages/weekly/weekly",
+    "pages/join/join",
+    "pages/books/book",
+    "pages/books/index",
+    "pages/books/favourite",
+    "pages/books/isbn",
+    "pages/book/book",
+    "pages/personal/personal",
+    "pages/uploading/uploading",
+    "pages/book_borrow/book_borrow",
+    "pages/order/order"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "书香北城",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "color": "#757575",
+    "selectedColor": "#479de6",
+    "borderStyle": "black",
+    "backgroundColor": "#f9f9f9",
+    "list": [
+      {
+        "text": "首页",
+        "pagePath": "pages/about/about",
+        "iconPath": "pages/image/index.png",
+        "selectedIconPath": "pages/image/index-active.png"
+      },
+
+       {
+          "text": "广场",
+          "pagePath": "pages/index/index",
+          "iconPath": "pages/image/lunt.png",
+          "selectedIconPath": "pages/image/ltan.png"
+        },
+        {
+          "text": "书库",
+          "pagePath": "pages/books/isbn",
+          "iconPath": "pages/image/timg.jpg",
+          "selectedIconPath": "pages/image/timg-1.jpg.png"
+        },
+
+      {
+        "text": "活动",
+        "pagePath": "pages/weekly/weekly",
+        "iconPath": "pages/image/sight.png",
+        "selectedIconPath": "pages/image/sight-active.png"
+      },
+     
+      {
+        "text": "我的",
+        "pagePath": "pages/my/my",
+        "iconPath": "pages/image/user.png",
+        "selectedIconPath": "pages/image/user-active.png"
+      }
+
+      
+    ]
+  },
+  "sitemapLocation": "sitemap.json",
+  "style": "v2"
+}

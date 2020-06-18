@@ -1,0 +1,11 @@
+{
+  
+    "navigationBarTitleText": "广场",
+    "usingComponents":{
+    "loadingmore":"../../loadingmore/loadingmore",
+    "sxbc":"../../components/sxbc/sxbc"
+    },
+    "enablePullDownRefresh": true,
+    "backgroundTextStyle":"dark"
+  }
+  

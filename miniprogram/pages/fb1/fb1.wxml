@@ -1,0 +1,24 @@
+  <view class= "container">
+  <form class="ffrom" bindsubmit='onSubmitEvent'>
+  <!--文字输入-->
+  <textarea name="contentbookName" class="bookName" placeholder="请输入书名"></textarea>
+  <textarea name="content" class="textarea" placeholder="请输入本书籍简介"></textarea>
+  
+  <!--图片输入-->
+  <view class="image-list-group">
+    <view wx:for="{{tempImages}}" class="image-group" style="width:{{imageSize}}px;height:{{imageSize}}px;">
+      <image name="images" src="{{item}}" bindtap="onImageTap" data_index="{{index}}"></image>
+       <view class="close-btn" bind:tap="onRmoveBtnTap" data-index="{{index}}"></view>
+    </view>
+
+     
+
+
+      <view wx:if="{{tempImages.length < 1}}" class="add-image-btn" style="width:{{imageSize}}px;height:{{imageSize}}px;" bindtap="onAddImageTap">
+      <view>+</view>
+      </view>
+  </view>
+
+  <button type="primary" class="submit-btn" formType="submit">发表</button>
+  </form>
+  </view>

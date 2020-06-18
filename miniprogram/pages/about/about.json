@@ -1,0 +1,9 @@
+{
+ "navigationBarTitleText": "书香北城",
+ "usingComponents":{"searchbar":"/components/searchbar/searchbar",
+  "stars": "/components/stars/stars"
+  
+
+ 
+ }
+}

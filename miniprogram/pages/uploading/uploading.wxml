@@ -1,0 +1,18 @@
+<!--pages/uploading/uploading.wxml-->
+  <view class= "container">
+  <form class="ffrom" bindsubmit='onSubmitEvent'>
+  <!--文字输入-->
+   <textarea name="contentbookname" class="ISBN" placeholder="请输入书名"></textarea>
+  <textarea name="ISBN_ISBN" class="ISBN" placeholder="请输入ISBN号"></textarea>
+  <textarea name="book_damage" class="ISBN" placeholder="磨损程度:完好,略磨"></textarea>
+  <button type="primary" class="submit-btn" formType="submit">上传</button>
+  </form>
+<view class="putaway">
+  <view class="amount_book">我的书籍({{putaway_book.length}})</view>
+    <view class="book_list" wx:for="{{putaway_book}}" wx:for-item="sxbc" id="{{index}}" wx:for-index="index" bind:tap="onWriteSxbcTap">
+      <view><text decode="{{true}}" >书名:&emsp;&emsp;{{sxbc.book_name}}</text></view>
+      <view><text decode="{{true}}" >ISBN号:&emsp;{{sxbc.ISBN_ISBN}}</text></view>
+      <view><text decode="{{true}}" >磨损程度:&emsp;{{sxbc.book_damage}}</text></view>
+    </view>
+</view>
+  </view>

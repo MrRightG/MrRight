@@ -1,0 +1,6 @@
+<view>
+<view wx:for="{{collect}}" wx:for-item="sxbc" id="{{index}}" wx:for-index="index" bindtap="collect_jump" class="Acollect">
+<image src="{{sxbc.ISBN_image_S}}" class="ISBN_image_S"></image>
+<view class="ISBN_bname">{{sxbc.ISBN_bname}}</view>
+</view>
+</view>

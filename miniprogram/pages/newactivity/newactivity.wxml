@@ -1,0 +1,33 @@
+<view class= "container" >
+  <form class="ffrom" bindsubmit='onSubmitEvent'>
+    <textarea name="name" class="textarea" placeholder="请输入姓名"></textarea>
+    <textarea name="classN" class="textarea" placeholder="请输入班级"></textarea>
+    <textarea name="phone" class="textarea" placeholder="请输入联系方式"></textarea>
+    <textarea name="activName" class="textarea" placeholder="请输入活动名称"></textarea>
+ <picker mode="date" value="{{date}}" start="2020-01-01" end="2022-1-1" bindchange="bindDateChangeb">  
+    <view class="picker">  
+      开始日期: {{datesb}}  
+    </view>  
+  </picker>  
+ <picker mode="date" value="{{date}}" start="2020-01-01" end="2022-1-1" bindchange="bindDateChangef">  
+    <view class="picker">  
+      结束日期: {{datesf}}  
+    </view>  
+  </picker>  
+    <textarea name="activContent" class="texTarea" placeholder="请输入活动内容介绍"></textarea>
+    
+    <view class="addimage" >添加活动图片:
+    <view name="image" class="image-list-group">
+    <view wx:for="{{tempImages}}" class="image-group" style="width:{{imageSize}}px;height:{{imageSize}}px;">
+      <image name="images" src="{{item}}" bindtap="onImageTap" data_index="{{index}}"></image>
+       <view class="close-btn" bind:tap="onRmoveBtnTap" data-index="{{index}}"></view>
+    </view>
+      <view wx:if="{{tempImages.length < 1}}" class="add-image-btn" style="width:{{imageSize}}px;height:{{imageSize}}px;" bindtap="onAddImageTap">
+      <view>+</view>
+      </view>
+      </view>
+  </view>
+   <button type="primary" class="submit-btn" formType="submit">发表</button>
+  </form>
+ 
+</view>

@@ -1,0 +1,161 @@
+
+
+.container{
+  
+  background: #fff;
+ 
+}
+
+.container .sxbc-group{
+  width: 100%;
+  background: #fff;
+  margin-bottom: 30rpx;
+  box-sizing: border-box;
+  padding: 40rpx;
+}
+
+.sxbc-group .user-group{
+  display: flex;
+}
+
+.user-group .avater{
+  width: 74rpx;
+  height: 74rpx;
+  border-radius: 50%;
+}
+
+.user-group .right-info{
+  flex: 1;
+  margin-left: 20rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.right-info .username{
+  font-size: 28rpx;
+  color: #323232;
+}
+
+.right-info .detail-info{
+  font-size: 24rpx;
+  color: #656565;
+  display: flex;
+}
+
+.detail-info .time{
+margin-right: 20rpx;
+}
+
+.sxbc-content-group{
+  padding-top: 30rpx;
+}
+
+.sxbc-content-group .content{
+  font-size: 32rpx;
+}
+
+.sxbc-handle{
+  display: flex;
+  padding-top: 30rpx;
+  font-size: 28rpx;
+}
+
+.sxbc-handle image{
+  width: 40rpx;
+  height: 40rpx;
+  margin-right: 20rpx;
+}
+
+.sxbc-handle view{
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.comment-list-group{
+  padding-bottom: 60rpx;
+}
+
+.comment-list-group .comment-title{
+  font-size: 32rpx;
+  color: #323232;
+  border-left: 4rpx solid #1296db;
+  padding-left: 20rpx;
+}
+
+.comment-list-group .comment-group{
+  display: flex;
+  
+  padding: 40rpx 40rpx 0;
+}
+
+.comment-group .avatar{
+  width: 60rpx;
+  height: 60rpx;
+  border-radius: 50%;
+}
+
+.comment-group .right-group{
+  flex: 1;
+  padding-left: 20rpx;
+}
+
+.comment-group .right-group .top-group{
+  font-size: 28rpx;
+  display: flex;
+  justify-content: flex-start;
+  color: #323232;
+}
+
+.right-group .top-group .time{
+  margin-left: 20rpx;
+}
+
+.right-group .content-group{
+  font-size: 28rpx;
+  padding: 10rpx 0 20rpx;
+  border-bottom: 1px solid #e4e4e4;
+}
+
+
+
+ .comment-input-group{
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #fff;
+  padding: 20rpx;
+  border: 1px solid #e4e4e4;
+  z-index: 2;
+}
+
+.comment-input-group .comment-input{
+  font-size: 28rpx;
+  background-color: #fff;
+}
+
+.mask{
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background-color: rgba(0,0,0,0.3);
+  z-index: 1;
+}

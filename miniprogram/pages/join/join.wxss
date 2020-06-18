@@ -1,0 +1,34 @@
+.ffrom{
+ 
+}
+.container{
+   margin-top: 250rpx
+}
+.name{
+   
+  font-size: 33rpx;
+  height: 55rpx;
+  background: #fff;
+   border: 1rpx solid #E6E6EA;
+   border-radius: 5px
+}
+
+.number{
+  font-size: 33rpx;
+  height: 55rpx;
+  background: #fff;
+   border: 1rpx solid #E6E6EA;
+   border-radius: 5px
+}
+
+.class{
+  font-size: 33rpx;
+  height: 55rpx;
+  background: #fff;
+   border: 1rpx solid #E6E6EA;
+   border-radius: 5px
+}
+
+.submit-btn{
+  margin-top: 30rpx
+}

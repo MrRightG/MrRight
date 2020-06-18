@@ -1,0 +1,93 @@
+/* pages/weekly/weekly.wxss */
+
+.activity{
+  display: flex;
+}
+.activity-details{
+  display: flex;
+  flex-direction: column;
+  width: 550rpx;
+}
+.activity-image{
+  width: 600rpx;
+  height: 400rpx;
+}
+.activity-swiper{
+height: 1110rpx;
+}
+
+.activity-card{
+  height: 100%;
+  width: 100%;
+  background: #eee;
+  margin: 0 20rpx;
+  position: relative;
+ 
+}
+
+.return-button{
+  position: absolute;
+  right: 0;
+  top:10px;
+  font-size:26rpx;
+  font-style:italic;
+  border:1px solid blue;
+  border-right:0;
+  border-radius:10%;
+}
+
+.activity1{
+  background-color : #eee;
+}
+
+.name{
+  font-size: 35rpx;
+  margin-top: 20rpx;
+  margin-bottom: 10rpx;
+   display:flex;
+align-items:center;
+justify-content:center;
+margin: auto; 
+}
+
+.time{
+  font-size: 27rpx;
+  margin-top: 10rpx;
+  margin-bottom: 10rpx;
+   display:flex;
+align-items:center;
+justify-content:center;
+margin: auto; 
+}
+
+.js{
+  font-size: 35rpx;
+  margin-top:10rpx;
+  margin-bottom: 19rpx;
+   display:flex;
+align-items:center;
+justify-content:center;
+margin: auto; 
+}
+.activity-card1{
+  background: #eee;
+  height: 100%;
+   padding-top: 400rpx;
+}
+.nav-default1{
+
+  justify-content: center;
+ font-size: 37rpx;
+ 
+ margin-left: 240rpx;
+
+}
+
+.people{
+ display:flex;
+align-items:center;
+justify-content:center;
+margin: auto; 
+  width: 80%;
+  word-break: break-all;
+}

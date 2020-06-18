@@ -1,0 +1,5 @@
+{
+  "usingComponents": {
+  "sxbc": "../../components/sxbc/sxbc"
+  }
+}

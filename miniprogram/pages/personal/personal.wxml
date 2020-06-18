@@ -1,0 +1,48 @@
+<!--pages/information/information.wxml-->
+
+  
+     
+   
+
+
+  <view wx:for-index="index"  wx:for-item="sxbc">
+  <view wx:if="{{openid == '-1'}}">请先授权登录</view>
+
+  <view wx:elif="{{userinformation.user_name}}" >
+  <!--已授权登录-->
+  <view class="userinformation">
+ 
+  <text class="userinfo">姓名:{{userinformation.user_name}}</text>
+  <text class="userinfo">性别:{{user_sex}}</text>
+  <text class="userinfo">年龄:{{userinformation.user_age}}</text>
+  <text class="userinfo">学号:{{userinformation.user_sid}}</text>
+  <text class="userinfo">手机号:{{userinformation.user_phoneNumber}}</text>
+  <text class="userinfo">班级:{{userinformation.user_class}}</text>
+  <text class="userinfo">宿舍:{{userinformation.user_location}}</text>
+  </view>
+<button type="primary" class="modific-btn" formType="submit" bindtap="modificbtn">修改信息</button>
+</view>
+
+
+  <view wx:else>
+  
+<form class="ffrom" bindsubmit='onSubmitEvent' style="align-items: center">
+    <!--未授权输入用户信息-->
+   
+    <!--文字输入-->
+
+    <textarea name="name" class="name" placeholder="请输入姓名"></textarea>
+    <textarea name="sex" class="name" placeholder="请输入性别"></textarea>
+    <textarea name="age" class="name" placeholder="请输入年龄"></textarea>
+    <textarea name="studentnumber" class="name" placeholder="请输入学号"></textarea>
+    <textarea name="number" class="name" placeholder="请输入手机号"></textarea>
+    <textarea name="classname" class="name" placeholder="请输入班级"></textarea>
+    <textarea name="domitory" class="name" placeholder="请输入宿舍号"></textarea>
+
+   <button type="primary" class="submit-btn" formType="submit">确认</button>
+    </form>
+    
+    </view>
+
+</view>
+

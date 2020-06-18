@@ -1,0 +1,23 @@
+<view wx:if="{{!confirm}}" class="confirm">
+<view class="confirm_text">确认是否借书并填写还书日期</view>
+<view class="section">  
+  <picker mode="date" value="{{date}}" start="2020-01-01" end="2022-1-1" bindchange="bindDateChange">  
+    <view class="picker">  
+      日期: {{dates}}  
+    </view>  
+  </picker>  
+</view>  
+<button bindtap="confirm" class="btn_confirm">确认</button>
+</view>
+
+<view  wx:if="{{confirm}}"  >
+
+<text class="_text">书名:{{c_loan.book_name}}</text>
+<text class="_text">状态:{{c_loan.book_damage}}</text>
+<view class="contact_info">联系信息:</view>
+<text class="_text">姓名:{{userinformation.user_name}}</text>
+<text class="_text"  bindtap="viewClick01">电话:{{userinformation.user_phoneNumber}}</text>
+<view class="hint">点击电话联系他</view>
+<button class="jumprecord" bindtap="jumprecord">借书记录-></button>
+</view>
+

@@ -1,0 +1,10 @@
+<view class="container">
+<view class="logo-group">
+<image class="logo" src=""></image>
+</view>
+
+<text class="tips" decode="{{true}}">授权成功后请到&nbsp;我的->个人信息&nbsp;填写个人资料</text> 
+<view class="tips">授权后才能使用后续功能</view>
+<button type="primary" open-type="getUserInfo" bind:getuserinfo="onGetUserInfoTap">授权</button>
+
+</view>
