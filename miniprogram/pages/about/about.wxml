@@ -26,7 +26,7 @@
   
   
 
-<!-- 电影模块 -->
+
   <view class='module-group'>
     <view class='item-group' wx:for="{{book}}" wx:for-index="index" wx:for-item="sxbc" >
     <navigator url="../book/book?isbn={{book[index].ISBN_ISBN}}">
